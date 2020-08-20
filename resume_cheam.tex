@@ -5,6 +5,7 @@
 % Last Updated: Aug 20, 2020 
 %------------------------
 
+% no periods at the end
 %  move experience to before projects (once have relevant experience)
 
 \documentclass[letterpaper,11pt]{article}
@@ -41,14 +42,14 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
-%\titleformat{\section}{
-%  \vspace{-4pt}\scshape\raggedright\large
-%}{}{0em}{}[ \vspace{-5pt}]
-
-% Ruled
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[ \vspace{-5pt}]
+
+ %Ruled
+%\titleformat{\section}{
+%  \vspace{-4pt}\scshape\raggedright\large
+%}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
@@ -150,25 +151,27 @@
 %-----------PROJECTS START---------------------------------------
 % Use STAR: situation, task, action, result
 % Start bullet points with action verbs
+% show results and tools you've used
+% no more than 3 bullet points per project
 \section{\color{BlueViolet} Projects}
     \small
     \textbf{Pokemon Classifier} 
     \vspace{-4pt}
         \begin{itemize}
-            \item Trained a 7 layer Convolutional Neural Network (CNN) in Python using Keras and Tensorflow on a dataset of about 1400 pokemon images. Obtained accuracy of about 93\% over 6 classes.
+            \item Trained a 7 layer Convolutional Neural Network (CNN) in Python using Keras and Tensorflow on a dataset of about 1400 pokemon images. Obtained accuracy of about 93\% over 6 classes
             \vspace{-5pt}
-            \item The dataset was collected using the Microsoft Azure Bing Image Search API.
+            \item The dataset was collected using the Microsoft Azure Bing Image Search API
         \end{itemize}
     \vspace{-2pt}
     
     \textbf{Mini Self Driving Car} 
     \vspace{-4pt}
         \begin{itemize}
-            \item Wrote Dijkstra's shortest path algorithm in Python to solve path planning.
+            \item Wrote Dijkstra's shortest path algorithm in Python to solve path planning
             \vspace{-5pt}
-            \item Implemented vision-based lane detection and vision-based PD controller in Python.
+            \item Implemented vision-based lane detection and vision-based PD controller in Python
             \vspace{-5pt}
-            \item Project done on Arduino Uno and Raspberry Pi, in a team of 5 people.
+            \item Project done on Arduino Uno and Raspberry Pi, in a team of 5 people
         \end{itemize}
     %For a mini self driving car group project, I wrote Dijkstra's shortest path algorithm in Python for our path planning module. I also wrote a simple computer vision solution in Python for lane detection. Programmed on an Arduino Uno and a Raspberry Pi
     \vspace{-2pt}
@@ -176,11 +179,11 @@
     \textbf{Non-Data-Driven Method of Learning Facets in Object Tracking} 
     \vspace{-4pt}
         \begin{itemize}
-            \item Employed SIFT matching and mean-shift tracking on color histogram to track an object.
+            \item Employed SIFT matching and mean-shift tracking on color histogram to track an object
             \vspace{-5pt}
-            \item Facets are stored during tracking to augment the reference image database.
+            \item Facets are stored during tracking to augment the reference image database
             \vspace{-5pt}
-            \item Allows tracking of an object after the object has been reintroduced into the scene while showing a different facet.
+            \item Allows tracking of an object after the object has been reintroduced into the scene while showing a different facet
         \end{itemize}
         % Given only one reference image, employed SIFT matching and mean-shift tracking on color
         % histogram to track the object. During tracking, its facets are stored to augment the reference image
@@ -190,32 +193,32 @@
     \textbf{Blink Detection} 
     \vspace{-4pt}
         \begin{itemize}
-            \item Used dlib's face detector and facial landmark models to localise the face and the eyes. 
+            \item Used dlib's face detector and facial landmark models to localise the face and the eyes
             \vspace{-5pt}
-            \item Computed the eye aspect ratio to determine whether a blink has occurred.
+            \item Computed the eye aspect ratio to determine whether a blink has occurred
         \end{itemize}
     \vspace{-2pt}
     
     \textbf{Grid Pathfinding with A* and Jump Point Search} 
     \vspace{-4pt}
         \begin{itemize}
-            \item Implemented A* with Jump Point Search in C++ to solve a grid pathfinding problem.
+            \item Implemented A* with Jump Point Search in C++ to solve a grid pathfinding problem
         \end{itemize}
     \vspace{-2pt}
     
     \textbf{High Confidence Policy Improvement (Reinforcement Learning)} 
     \vspace{-4pt}
         \begin{itemize}
-            \item Using importance sampling, produced stochastic policies written in C++ that outperformed the behavior policy for an adaptive insulin advisor.
+            \item Using importance sampling, produced stochastic policies written in C++ that outperformed the behavior policy for an adaptive insulin advisor
         \end{itemize}
     \vspace{-2pt}
     
     \textbf{Voice Control of Magic Glass with Alexa} 
     \vspace{-4pt}
         \begin{itemize}
-            \item Using Arduino code, interfaced an ESP8266 microcontroller (MCU) to communicate with Amazon Echo.
+            \item Using Arduino code, interfaced an ESP8266 microcontroller (MCU) to communicate with Amazon Echo
             \vspace{-5pt}
-            \item The MCU controls a relay that switches the magic glass.
+            \item The MCU controls a relay that switches the magic glass
         \end{itemize}
         
     % unlisted projects
@@ -224,7 +227,7 @@
     \small \textbf{Document Scanner} 
     \vspace{-4pt}
         \begin{itemize}
-            \item Used perspective transform in Python and OpenCV to obtain a top-down view of a piece of document.
+            \item Used perspective transform in Python and OpenCV to obtain a top-down view of a piece of document
         \end{itemize}
     \vspace{-2pt}
     
@@ -233,15 +236,15 @@
         \begin{itemize}
             \item Using HSV thresholding, tracked a ball
             \vspace{-5pt}
-            \item More than 30 fps.
+            \item More than 30 fps
         \end{itemize}
     \vspace{-2pt}
     
     \resumeSubItem{Handwritten Digit Recognition}
-      {Using HOG (Histogram of Oriented Gradients), SVM (Support Vector Machine), and OpenCV. On [placeholder] dataset, achieved [placeholder] accuracy.}
+      {Using HOG (Histogram of Oriented Gradients), SVM (Support Vector Machine), and OpenCV. On [placeholder] dataset, achieved [placeholder] accuracy}
       
     \resumeSubItem{Data Center Temperature Monitoring}
-      {Python warning script for rising temperatures in data centres.}
+      {Python warning script for rising temperatures in data centres}
       
     \end{comment}
 
@@ -251,7 +254,7 @@
 
     
 
-%-----------EXPERIENCE-----------------
+%--------------------------EXPERIENCE-----------------------------
 \section{\color{BlueViolet} Experience}
     \vspace{-2pt}
     \JobSubheading
@@ -259,11 +262,11 @@
       {Data Center Engineer}{Aug 2017 - Jun 2018}
       \vspace{0pt}
         \begin{itemize}
-            \item Designed and built Data Center Monitoring Systems for temperature and humidity monitoring.
+            \item Designed and built Data Center Monitoring Systems for temperature and humidity monitoring
             \vspace{-5pt}
-            \item Created shop drawings of electrical panels in AutoCAD, planned cable routing, and built electrical panels.
+            \item Created shop drawings of electrical panels in AutoCAD, planned cable routing, and built electrical panels
             \vspace{-5pt}
-            \item Tools used: Modbus TCP/IP, BACNET, WAGO controllers, AutoCAD, MOXA controllers.
+            \item Tools used: Modbus TCP/IP, BACNET, WAGO controllers, AutoCAD, MOXA controllers
             % automated tasks (programming, scrips), introduced better systems (version control, documentation)
         \end{itemize}
     \vspace{-2pt}
@@ -273,9 +276,9 @@
       {Graduate Research Assistant}{Aug 2015 - Dec 2016}
       \vspace{0pt}
       \begin{itemize}
-        \item Researched full-duplex radio. Ported MATLAB to C. Worked with USRP Ettus E110.
+        \item Researched full-duplex radio. Ported MATLAB to C. Worked with USRP Ettus E110
         \vspace{-5pt}
-        \item Focused on Interference Alignment via index coding and rank minimisation.
+        \item Focused on Interference Alignment via index coding and rank minimisation
       \end{itemize}
     \vspace{-2pt}
     
@@ -288,7 +291,7 @@
       {Lab Assistant}{Jan 2014 - May 2014}
       \vspace{0pt}
       \begin{itemize}
-        \item Helped setup robots in Linux and ROS.
+        \item Helped setup robots in Linux and ROS
       \end{itemize}
     
     \JobSubheading
@@ -296,7 +299,7 @@
       {Undergraduate Tutor}{Sep 2013 - Sep 2014}
       \vspace{0pt}
       \begin{itemize}
-        \item Tutored peers in Calculus and French.
+        \item Tutored peers in Calculus and French
       \end{itemize}
     
     \JobSubheading
@@ -304,8 +307,7 @@
       {Graduate Teaching Assistant}{Aug 2015 - Dec 2016}
       \vspace{0pt}
       \begin{itemize}
-        \item Certified TA for undergraduate Signals and Systems course.
-      \end{itemize}
+        \item Certified TA for undergraduate Signals and Systems course
       
     \end{comment}
  %------------------------EXPERIENCE END-------------------------------
@@ -343,9 +345,9 @@
 \section{\color{BlueViolet} Certifications}
   \resumeSubHeadingListStart
   
-      \CertificationsSubItem {Business Foundations Series for Scientists and Engineers (8 weeks, Summer 2019).}
+      \CertificationsSubItem {Business Foundations Series for Scientists and Engineers (8 weeks, Summer 2019)}
       
-      % -------awards (unlisted) ------
+      % unlisted
       \begin{comment}
       
       \resumeSubItem{Awards}
@@ -363,7 +365,7 @@
       \begin{comment}
       
       \resumeSubItem{Scholarships}
-      {Any scholarships.}
+      {Stuff}
       
       \end{comment}
       

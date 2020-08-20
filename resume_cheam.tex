@@ -1,0 +1,369 @@
+%-------------------------
+% Resume in Latex
+% Author : Hao Cheam
+% License : MIT
+% Last Updated: Jul 28, 2020  (removed clutter in skills section)
+%------------------------
+
+%  move experience to before projects (once have relevant experience)
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{comment}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+%\titleformat{\section}{
+%  \vspace{-4pt}\scshape\raggedright\large
+%}{}{0em}{}[ \vspace{-5pt}]
+
+% Ruled
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-3pt}}
+  }
+}
+
+% no bold text
+\newcommand{\resumeItemAlt}[1]{
+  \item\small {#1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt} \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2  \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\JobSubheading}[4]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2  \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\EducationSubheading}[4]{
+  \vspace{-1pt}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2  \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{1pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3.5pt}}
+\newcommand{\resumeSubItemAlt}[1]{\resumeItemAlt{#1}\vspace{-3.5pt}}
+
+\newcommand{\CertificationsSubItem}[1]{\resumeItemAlt{#1}\vspace{-3.5pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+    \textbf{ \Large \color{BlueViolet} Hao Cheam}
+\end{center}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \small \href{https://www.linkedin.com/in/haocheam/}{https://www.linkedin.com/in/haocheam/} & 
+  \small \href{mailto:hcheam@umass.edu}{hcheam@umass.edu} \\
+  \small \href{https://github.com/chc442}{https://github.com/chc442} & \small 413-313-8950
+\end{tabular*}
+
+% \mbox \newline
+
+% --------SUMMARY--------------
+
+%\section{\color{BlueViolet} Summary}
+%\small Recent Master's graduate in Computer Science with 2 years of work experience involving very small teams and high degrees of autonomy. Heavy emphasis on Machine Learning for Master's coursework. Hands-on experience in traditional and machine learning-based computer vision methods, as well as embedded systems.
+% \small \textit{Interested in robotics, computer vision, artificial intelligence, and embedded systems.}
+
+
+%-----------EDUCATION-----------------
+\section{\color{BlueViolet} Education}
+    \EducationSubheading
+      {University of Massachusetts Amherst}{}
+      {MS in Computer Science;  GPA: 3.6/4.0}{Aug 2018 -- May 2020}
+          {\small \textit{Courses: Computer Vision, Machine Learning, Robotics, Artificial Intelligence, Reinforcement Learning,  Neural Networks}}
+          %  Secure Distributed Systems
+    \vspace{5pt}
+    \EducationSubheading
+      {The University of Texas at Austin}{}
+      {BS in Electrical and Computer Engineering (Honors; Minor in French);  GPA: 3.8/4.0}{Aug 2011 -- May 2015}
+          % \resumeSubItemAlt{Relevant Courses: Video Processing, Image Processing, and Embedded Systems. }
+          
+     % Primary technical core: Signal processing and Networks; Secondary technical core: Embedded Systems and Computer Architecture.
+     % Relevant coursework: Electronic circuits, Assembly programming, Embedded systems, Signals and Systems, Discrete Maths, Probability, Digital Logic, Real-time DSP Lab, Computer architecture, Image Processing, Machine Learning (Coursera), DSP Theory, Algorithms, Number Theory, Real Analysis.
+     % Grad Courses: Estimation Theory, Probability, Video Processing.
+    
+
+%-----------PROJECTS START-----------------
+% Use STAR: situation, task, action, result
+% Start bullet points with action verbs
+\section{\color{BlueViolet} Projects}
+    \small
+    \textbf{Pokemon Classifier} 
+    \vspace{-4pt}
+        \begin{itemize}
+            \item Trained a 7 layer Convolutional Neural Network (CNN) in Python using Keras and Tensorflow on a dataset of about 1400 pokemon images. Obtained accuracy of about 93\% over 6 classes.
+            \vspace{-5pt}
+            \item The dataset was collected using the Microsoft Azure Bing Image Search API.
+        \end{itemize}
+    \vspace{-2pt}
+    
+    \textbf{Mini Self Driving Car} 
+    \vspace{-4pt}
+        \begin{itemize}
+            \item Wrote Dijkstra's shortest path algorithm in Python to solve path planning.
+            \vspace{-5pt}
+            \item Implemented vision-based lane detection and vision-based PD controller in Python.
+            \vspace{-5pt}
+            \item Project done on Arduino Uno and Raspberry Pi, in a team of 5 people.
+        \end{itemize}
+    %For a mini self driving car group project, I wrote Dijkstra's shortest path algorithm in Python for our path planning module. I also wrote a simple computer vision solution in Python for lane detection. Programmed on an Arduino Uno and a Raspberry Pi
+    \vspace{-2pt}
+    
+    \textbf{Non-Data-Driven Method of Learning Facets in Object Tracking} 
+    \vspace{-4pt}
+        \begin{itemize}
+            \item Employed SIFT matching and mean-shift tracking on color histogram to track an object.
+            \vspace{-5pt}
+            \item Facets are stored during tracking to augment the reference image database.
+            \vspace{-5pt}
+            \item Allows tracking of an object after the object has been reintroduced into the scene while showing a different facet.
+        \end{itemize}
+        % Given only one reference image, employed SIFT matching and mean-shift tracking on color
+        % histogram to track the object. During tracking, its facets are stored to augment the reference image
+        % database. This allows the user to track the object even when it is showing a different facet from the one in the reference image.
+    \vspace{-2pt}
+        
+    \textbf{Blink Detection} 
+    \vspace{-4pt}
+        \begin{itemize}
+            \item Used dlib's face detector and facial landmark models to localise the face and the eyes. 
+            \vspace{-5pt}
+            \item Computed the eye aspect ratio to determine whether a blink has occurred.
+        \end{itemize}
+    \vspace{-2pt}
+    
+    \textbf{Grid Pathfinding with A* and Jump Point Search} 
+    \vspace{-4pt}
+        \begin{itemize}
+            \item Implemented A* with Jump Point Search in C++ to solve a grid pathfinding problem.
+        \end{itemize}
+    \vspace{-2pt}
+    
+    \textbf{High Confidence Policy Improvement (Reinforcement Learning)} 
+    \vspace{-4pt}
+        \begin{itemize}
+            \item Using importance sampling, produced stochastic policies written in C++ that outperformed the behavior policy for an adaptive insulin advisor.
+        \end{itemize}
+    \vspace{-2pt}
+    
+    \textbf{Voice Control of Magic Glass with Alexa} 
+    \vspace{-4pt}
+        \begin{itemize}
+            \item Using Arduino code, interfaced an ESP8266 microcontroller (MCU) to communicate with Amazon Echo.
+            \vspace{-5pt}
+            \item The MCU controls a relay that switches the magic glass.
+        \end{itemize}
+        
+    % ------------unlisted projects--------------
+    \begin{comment}
+
+    \small \textbf{Document Scanner} 
+    \vspace{-4pt}
+        \begin{itemize}
+            \item Used perspective transform in Python and OpenCV to obtain a top-down view of a piece of document.
+        \end{itemize}
+    \vspace{-2pt}
+    
+    \small \textbf{Color Based Object Tracking} 
+    \vspace{-4pt}
+        \begin{itemize}
+            \item Using HSV thresholding, tracked a ball
+            \vspace{-5pt}
+            \item More than 30 fps.
+        \end{itemize}
+    \vspace{-2pt}
+    
+    \resumeSubItem{Handwritten Digit Recognition}
+      {Using HOG (Histogram of Oriented Gradients), SVM (Support Vector Machine), and OpenCV. On [placeholder] dataset, achieved [placeholder] accuracy.}
+      
+    \resumeSubItem{Data Center Temperature Monitoring}
+      {Python warning script for rising temperatures in data centres.}
+      
+    \end{comment}
+    %------------------------------------
+        
+%--------PROJECTS END-----------------
+
+
+%--------SKILLS------------
+\section{\color{BlueViolet} Skills}
+
+      \small \textbf{Programming Languages:} Python, C, C++, MATLAB, Java
+      % Octave
+      \vspace{1pt}
+      
+      \textbf{Frameworks/Tools:} OpenCV, PyTorch, Keras, Linux, git, ROS
+       % \LaTeX, AutoCAD, Code Composer Studio, LogicAid, SimuAid, Eclipse, Numpy, scikit-learn, Keil uVision, PCB Artist, Labview
+      \vspace{1pt}
+
+      % \textbf{Concepts/Algorithms:} Deep learning, Particle filter, SLAM, Reinforcement learning, Object tracking
+      % A* pathfinding, CNN for images, machine learning algorithms for regression/classification, object detection, neural networks
+      \vspace{1pt}
+      
+      % \textbf{Misc:} Embedded system prototyping, Soldering
+      % tutoring
+      % \vspace{2pt}
+      
+      %   \resumeSubItem{Technologies}
+      %   {AWS, Play, React, Kafka, GCE}
+
+      \textbf{Languages:} Chinese (Fluent), Malay (Intermediate), French (Intermediate)
+      
+  
+  
+
+%-----------EXPERIENCE-----------------
+\section{\color{BlueViolet} Experience}
+    \vspace{-2pt}
+    \JobSubheading
+      {Powerware Systems}{Selangor, Malaysia}
+      {Data Center Engineer}{Aug 2017 - Jun 2018}
+      \vspace{0pt}
+        \begin{itemize}
+            \item Designed and built Data Center Monitoring Systems for temperature and humidity monitoring.
+            \vspace{-5pt}
+            \item Created shop drawings of electrical panels in AutoCAD, planned cable routing, and built electrical panels.
+            \vspace{-5pt}
+            \item Tools used: Modbus TCP/IP, BACNET, WAGO controllers, AutoCAD, MOXA controllers.
+            % automated tasks (programming, scrips), introduced better systems (version control, documentation)
+        \end{itemize}
+    \vspace{-2pt}
+
+    \JobSubheading
+      {ECE Department, The University of Texas at Austin}{Austin, TX}
+      {Graduate Research Assistant}{Aug 2015 - Dec 2016}
+      \vspace{0pt}
+      \begin{itemize}
+        \item Researched full-duplex radio. Ported MATLAB to C. Worked with USRP Ettus E110.
+        \vspace{-5pt}
+        \item Focused on Interference Alignment via index coding and rank minimisation.
+      \end{itemize}
+    \vspace{-2pt}
+    
+        
+    % --------------unlisted jobs-----------------
+    \begin{comment}
+    
+    \JobSubheading
+      {Pharos Lab, The University of Texas at Austin}{Austin, TX}
+      {Lab Assistant}{Jan 2014 - May 2014}
+      \vspace{0pt}
+      \begin{itemize}
+        \item Helped setup robots in Linux and ROS.
+      \end{itemize}
+    
+    \JobSubheading
+      {Sanger Learning Center, The University of Texas at Austin}{Austin, TX}
+      {Undergraduate Tutor}{Sep 2013 - Sep 2014}
+      \vspace{0pt}
+      \begin{itemize}
+        \item Tutored peers in Calculus and French.
+      \end{itemize}
+    
+    \JobSubheading
+      {ECE Department, The University of Texas at Austin}{Austin, TX}
+      {Graduate Teaching Assistant}{Aug 2015 - Dec 2016}
+      \vspace{0pt}
+      \begin{itemize}
+        \item Certified TA for undergraduate Signals and Systems course.
+      \end{itemize}
+      
+    \end{comment}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      
+
+
+%--------CERTIFICATES AND AWARDS------------
+\section{\color{BlueViolet} Certifications}
+  \resumeSubHeadingListStart
+  
+      \CertificationsSubItem {Business Foundations Series for Scientists and Engineers (8 weeks, Summer 2019).}
+      
+      % -------awards (unlisted) ------
+      \begin{comment}
+      
+      \resumeSubItem{Awards}
+      {1st Place Team in Malaysian Math Olympiad (2009), Silver Prize in Australian Mathematics Competition (2009), 2nd Place in high school English Essay Writing Competition (2010), Semi-finalist in Malaysian National Classical Guitar Competition (2010).}
+     
+      % Malaysian National Physics Competition, 2010, 2nd-place in individual category, 1st-place in group category
+      % Australian Mathematics Competition, 2009, Silver Prize
+      % Malaysian National Mathematics Olympiad, 2009, 1st-place in group category
+      % Semi-finalist in 2010 Malaysian National Classical Guitar Competition
+      % 2nd place in Chong Hwa Independent High School English Essay Writing Competition
+      
+      \end{comment}
+      
+      % ----scholarships (unlisted)----
+      \begin{comment}
+      
+      \resumeSubItem{Scholarships}
+      {Any scholarships.}
+      
+      \end{comment}
+      
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

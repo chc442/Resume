@@ -30,9 +30,9 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\evensidemargin}{-0.45in}
+\addtolength{\textwidth}{0.9in} % recommended to be twice the absolute number of above
 \addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
 
@@ -76,7 +76,7 @@
 
 \newcommand{\JobSubheading}[4]{
   \vspace{-1pt}
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf {#1} & \textit{#2}  \\
       \textit{#3} & \textit{#4} \\
     \end{tabular*}\vspace{-5pt}
@@ -192,16 +192,7 @@
         % histogram to track the object. During tracking, its facets are stored to augment the reference image
         % database. This allows the user to track the object even when it is showing a different facet from the one in the reference image.
     \vspace{-2pt}
-        
-    \textbf{Blink Detection} 
-    \vspace{-4pt}
-        \begin{itemize}
-            \item Used dlib's face detector and facial landmark models to localise the face and the eyes
-            \vspace{-5pt}
-            \item Computed the eye aspect ratio to determine whether a blink has occurred
-        \end{itemize}
-    \vspace{-2pt}
-    
+          
     \textbf{Grid Pathfinding with A* and Jump Point Search} 
     \vspace{-4pt}
         \begin{itemize}
@@ -226,6 +217,15 @@
         
     % unlisted projects
     \begin{comment}
+
+    \textbf{Blink Detection} 
+    \vspace{-4pt}
+        \begin{itemize}
+            \item Used dlib's face detector and facial landmark models to localise the face and the eyes
+            \vspace{-5pt}
+            \item Computed the eye aspect ratio to determine whether a blink has occurred
+        \end{itemize}
+    \vspace{-2pt}
 
     \small \textbf{Document Scanner} 
     \vspace{-4pt}
